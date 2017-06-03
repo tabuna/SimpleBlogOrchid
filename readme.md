@@ -28,26 +28,6 @@ Learn more at these links:
 - [Support](https://github.com/TheOrchid/Platform/issues)
 - [Laravel](https://laravel.com/)
 
-## Security
-
-If you discover security related issues, please email bliz48rus@gmail.com instead of using the issue tracker.
-
-
-## Contributing
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-
-
-## Credits
-
-- [Alexandr Chernyaev](https://github.com/tabuna)
-- [All Contributors](../../contributors)
-
-
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
