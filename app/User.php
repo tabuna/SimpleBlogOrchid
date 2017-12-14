@@ -2,7 +2,7 @@
 
 namespace App;
 
-use Orchid\Core\Models\User as UserOrchid;
+use Orchid\Platform\Core\Models\User as UserOrchid;
 
 class User extends UserOrchid
 {

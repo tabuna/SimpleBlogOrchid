@@ -2,9 +2,9 @@
 
 namespace App\Core\Behaviors\Many;
 
-use Orchid\Behaviors\Many;
-use Orchid\Http\Forms\Posts\BasePostForm;
-use Orchid\Http\Forms\Posts\UploadPostForm;
+use Orchid\Platform\Behaviors\Many;
+use Orchid\Platform\Http\Forms\Posts\BasePostForm;
+use Orchid\Platform\Http\Forms\Posts\UploadPostForm;
 
 class Blog extends Many
 {
@@ -50,8 +50,22 @@ class Blog extends Many
     public function fields() : array
     {
         return [
-            'name'        => 'tag:input|type:text|name:name|max:255|required|title:Название статьи|help:Как называется статья?',
-            'body'        => 'tag:wysiwyg|name:body|max:255|required|rows:10',
+            'name'        => [
+                'tag'      => 'input',
+                'type'     => 'text',
+                'name'     => 'name',
+                'max'      => 255,
+                'required' => true,
+                'title'    => 'Название статьи',
+                'help'     => 'Как называется статья?',
+            ],
+            'body' => [
+                'tag'      => 'wysiwyg',
+                'name'     => 'body',
+                'max'      => 255,
+                'required' => true,
+                'rows'     => 10,
+            ],
             'title'       => 'tag:input|type:text|name:title|max:255|required|title:Залоголок страницы|help:Заголовок вкладки',
             'description' => 'tag:textarea|name:description|max:255|required|rows:5|title:Краткое описание',
             'keywords'    => 'tag:tags|name:keywords|max:255|required|title:Keywords|help:Ключевые слова',

@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use Orchid\Core\Models\Post;
+use Orchid\Platform\Core\Models\Post;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 

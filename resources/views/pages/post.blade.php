@@ -17,7 +17,7 @@
                 <div class="post-heading">
                     <h1>{{$post->getContent('name')}}</h1>
                     <h2 class="subheading">{{$post->getContent('subname')}}</h2>
-                    <span class="meta">Опубликовано {{$post->publish_at->diffForHumans()}}</span>
+                    <span class="meta">Published on {{$post->publish_at->diffForHumans()}}</span>
                 </div>
             </div>
         </div>

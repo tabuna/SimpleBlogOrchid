@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Orchid\Core\Models\Post;
+use Orchid\Platform\Core\Models\Post;
 
 class BlogController extends Controller
 {
@@ -16,7 +16,7 @@ class BlogController extends Controller
             ->status('publish')
             ->with('attachment')
             ->orderBy('publish_at','Desc')
-            ->simplePaginate(2);
+            ->simplePaginate(5);
 
         return view('pages.main', [
             'posts' => $posts

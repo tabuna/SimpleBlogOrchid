@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>@yield('title','Последние записи') - {{setting('site_title')}}</title>
+    <title>@yield('title','The last notes') - {{setting('site_title')}}</title>
     <meta name="description" content="{{setting('site_description')}}">
     <meta name="keywords" content="{{setting('site_keywords')}}">
 
