@@ -16,7 +16,7 @@ class BlogController extends Controller
             ->status('publish')
             ->with('attachment')
             ->orderBy('publish_at','Desc')
-            ->simplePaginate(5);
+            ->simplePaginate(2);
 
         return view('pages.main', [
             'posts' => $posts

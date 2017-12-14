@@ -11,12 +11,12 @@ class Blog extends Many
     /**
      * @var string
      */
-    public $name = 'Записи блога';
+    public $name = 'Blog';
 
     /**
      * @var string
      */
-    public $description = 'Пример записей блога';
+    public $description = 'Blog description';
 
     /**
      * @var string
