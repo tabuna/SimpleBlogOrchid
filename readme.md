@@ -1,7 +1,10 @@
-<p align="center">
-<a href="https://github.com/TheOrchid/Platform"><img width="250"  src="https://theorchid.github.io/assets/img/orchid.svg">
-</a>
-</p>
+
+<h1 align="center">
+  <br>
+  <a href="https://orchid.software/"><img src="https://orchid.software/img/orchid.svg" alt="ORCHID" width="250"></a>
+  <br>
+  <br>
+</h1>
 
 
 ## Official Documentation
