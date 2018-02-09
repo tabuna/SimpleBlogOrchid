@@ -1,20 +1,23 @@
-<p align="center">
-<a href="https://github.com/TheOrchid/Platform"><img width="250"  src="https://theorchid.github.io/assets/img/orchid.svg">
-</a>
-</p>
+
+<h1 align="center">
+  <br>
+  <a href="https://orchid.software/"><img src="https://orchid.software/img/orchid.svg" alt="ORCHID" width="250"></a>
+  <br>
+  <br>
+</h1>
 
 
 ## Official Documentation
 
-Documentation can be found at [Orchid website](https://theorchid.github.io/docs/).
+Documentation can be found at [ORCHID website](https://orchid.software/docs).
 
 ## Learn More
 
 Learn more at these links:
 
-- [Website](https://theorchid.github.io/)
-- [Documentation](https://theorchid.github.io/)
-- [Support](https://github.com/TheOrchid/Platform/issues)
+- [Website](https://orchid.software/)
+- [Documentation](https://orchid.software/docs)
+- [Support](https://github.com/orchidsoftware/platform/issues)
 - [Laravel](https://laravel.com/)
 
 ## License
