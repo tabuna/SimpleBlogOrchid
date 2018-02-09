@@ -16,6 +16,30 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Sub-Domain Routing
+    |--------------------------------------------------------------------------
+    |
+    | You can use the admin panel on a separate subdomain.
+    | For example: 'admin.example.com'
+    |
+    */
+
+    'domain' => env('DASHBOARD_DOMAIN', dashboard_domain()),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Route Prefixes
+    |--------------------------------------------------------------------------
+    |
+    | This prefix method can be used for the prefix of each
+    | route in the administration panel. For example, you can change to 'admin'
+    |
+    */
+
+    'prefix' => env('DASHBOARD_PREFIX', 'dashboard'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Middleware
     |--------------------------------------------------------------------------
     |
@@ -28,7 +52,6 @@ return [
         'public'  => ['web'],
         'private' => ['web', 'dashboard'],
     ],
-
 
     /*
     |--------------------------------------------------------------------------
@@ -43,12 +66,11 @@ return [
         'display' => true,
         'image'   => '/orchid/img/background.jpg',
         //'slogan'  => '',
-
     ],
 
     /*
     |--------------------------------------------------------------------------
-    | Available locales
+    | Locales
     |--------------------------------------------------------------------------
     |
     | Localization of records
@@ -80,7 +102,7 @@ return [
         'input'        => Orchid\Platform\Fields\Types\InputField::class,
         'list'         => Orchid\Platform\Fields\Types\ListField::class,
         'tags'         => Orchid\Platform\Fields\Types\TagsField::class,
-        'robot'        => Orchid\Platform\Fields\Types\RobotField::class,
+        'select'       => Orchid\Platform\Fields\Types\SelectField::class,
         'relationship' => Orchid\Platform\Fields\Types\RelationshipField::class,
         'place'        => Orchid\Platform\Fields\Types\PlaceField::class,
         'picture'      => Orchid\Platform\Fields\Types\PictureField::class,
@@ -101,8 +123,7 @@ return [
     |
     */
 
-    'single' => [//App\Core\Behaviors\Single\DemoPage::class,
-    ],
+    'single' => [],
 
     /*
     |--------------------------------------------------------------------------
@@ -113,8 +134,8 @@ return [
     |
     */
 
-    'many' => [//App\Core\Behaviors\Many\DemoPost::class,
-        \App\Core\Behaviors\Many\Blog::class
+    'many' => [
+        App\Behaviors\Many\Blog::class
     ],
 
     /*
@@ -124,8 +145,8 @@ return [
     */
 
     'common' => [
-        'user'     => \Orchid\Platform\Behaviors\Base\UserBase::class,
-        'category' => \Orchid\Platform\Behaviors\Base\CategoryBase::class,
+        'user'     => Orchid\Platform\Behaviors\Base\UserBase::class,
+        'category' => Orchid\Platform\Behaviors\Base\CategoryBase::class,
     ],
 
     /*
@@ -139,6 +160,23 @@ return [
 
     'menu' => [
         'header'  => 'Header menu',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Filesystem Disks
+    |--------------------------------------------------------------------------
+    |
+    | Here you may configure as many filesystem "disks" as you wish, and you
+    | may even configure multiple disks of the same driver. Defaults have
+    | been setup for each driver as an example of the required options.
+    |
+    | Supported Drivers: "local", "ftp", "s3", "rackspace"
+    |
+    */
+
+    'disks' => [
+        'media'      => 'public',
     ],
 
     /*
@@ -219,7 +257,6 @@ return [
     'main_widgets' => [
         Orchid\Platform\Http\Widgets\UpdateWidget::class,
     ],
-
 
     /*
     |--------------------------------------------------------------------------

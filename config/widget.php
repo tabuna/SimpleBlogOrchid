@@ -13,6 +13,6 @@ return [
     |
     */
     'widgets' => [
-        'menu' => \App\Http\Widgets\MenuWidget::class,
+        'menu' => \App\Http\Widgets\MenuWidget::class
     ],
 ];

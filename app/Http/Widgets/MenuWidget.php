@@ -10,7 +10,7 @@ class MenuWidget extends Widget {
      */
     public function handler()
     {
-        $menu = Menu::whereNull('parent')
+        $menu = Menu::where('parent',0)
             ->where('type', 'header')->get();
 
         return view('partials.menu', [
